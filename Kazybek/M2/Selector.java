@@ -38,10 +38,10 @@ public final class Selector {
     */
    public static <T> T min(Collection<T> coll, Comparator<T> comp) {
       if (coll == null || comp == null){
-         throw new IllegalArgumentException;
+         throw new IllegalArgumentException();
       }
       if(coll.length == 0) {
-         throw new NoSuchElementException;
+         throw new NoSuchElementException();
       }
       
       return null;
