@@ -40,11 +40,17 @@ public final class Selector {
       if (coll == null || comp == null){
          throw new IllegalArgumentException();
       }
-      if(coll.length == 0) {
+      if(coll.isEmpty()) {
          throw new NoSuchElementException();
       }
-      
-      return null;
+      Iterator<T>	iter = coll.iterator();
+      T min = iter.next();
+      for(T item: coll) {
+         if(comp.compare(item, min) < 0) {
+            min = item;
+         }
+      }
+      return min;
    }
 
 

@@ -47,12 +47,12 @@ public class HandoutExamples {
    static class Data {
       String  stringVal;
       Integer integerVal;
-
+   
       public Data(String sval, Integer ival) {
          stringVal = sval;
          integerVal = ival;
       }
-
+   
       @Override
       /**
        * Returns a string representation of this Data.
@@ -61,7 +61,7 @@ public class HandoutExamples {
       public String toString() {
          return "(" + stringVal + ", " + integerVal + ")";
       }
-
+   
       @Override
       /**
        * Returns true if the provided object is
@@ -137,12 +137,12 @@ public class HandoutExamples {
     */
    public static void main(String[] args) {
       minExamples();
-      maxExamples();
-      kminExamples();
-      kmaxExamples();
-      rangeExamples();
-      ceilingExamples();
-      floorExamples();
+      //maxExamples();
+      //kminExamples();
+      //kmaxExamples();
+      //rangeExamples();
+      //ceilingExamples();
+      //floorExamples();
    }
 
 
