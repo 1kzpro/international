@@ -8,9 +8,9 @@ import java.util.NoSuchElementException;
 /**
  * Defines a library of selection methods on Collections.
  *
- * @author  YOUR NAME (you@auburn.edu)
+ * @author  Kazybek Mizam (kzm0099@auburn.edu)
  * @author  Dean Hendrix (dh@auburn.edu)
- * @version TODAY
+ * @version 02/09/2020
  *
  */
 public final class Selector {
@@ -110,22 +110,17 @@ public final class Selector {
       T max = max(coll, comp);
       Collection<T> list = range(coll, lastMin, max, comp);
       
-      if (k == 1) {
-         return lastMin;
-      }
-      else {
-         list.remove(lastMin);
-         for(int i = 0; i < k - 1; i++){
-            T newMin = min(list, comp);
-            if(lastMin == newMin) {
-               k = k + 1;
-            }
-            lastMin = newMin;
-            if (lastMin == max && i+1 < k) {
-               throw new NoSuchElementException();
-            }
-            list.remove(lastMin);
+      for(int i = 0; i < k - 1; i++){
+         if (list.isEmpty()) {
+            throw new NoSuchElementException();
          }
+         T newMin = min(list, comp);
+         while(comp.compare(lastMin, newMin) == 0 && !list.isEmpty()) {
+            list.remove(newMin);
+            newMin = min(list, comp);
+         }
+         lastMin = newMin;
+         list.remove(lastMin);
       }
       return lastMin;
    }
@@ -156,23 +151,18 @@ public final class Selector {
       T lastMax = max(coll, comp);
       T min = min(coll, comp);
       Collection<T> list = range(coll, min, lastMax, comp);
-      
-      if (k == 1) {
-         return lastMax;
-      }
-      else {
-         list.remove(lastMax);
-         for(int i = 0; i < k - 1; i++){
-            T newMax = max(list, comp);
-            if(lastMax == newMax) {
-               k = k + 1;
-            }
-            lastMax = newMax;
-            if (lastMax == min && i+1 < k) {
-               throw new NoSuchElementException();
-            }
-            list.remove(lastMax);
+            
+      for(int i = 0; i < k - 1; i++){
+         if (list.isEmpty()) {
+            throw new NoSuchElementException();
          }
+         T newMax = max(list, comp);
+         while(comp.compare(lastMax, newMax) == 0 && !list.isEmpty()) {
+            list.remove(newMax);
+            newMax = max(list, comp);
+         }
+         lastMax = newMax;
+         list.remove(lastMax);
       }
       return lastMax;
    }
@@ -238,7 +228,7 @@ public final class Selector {
       if (coll == null || comp == null){
          throw new IllegalArgumentException();
       }
-      if(coll.isEmpty() || comp.compare(key, max(coll, comp)) >= 0) {
+      if(coll.isEmpty() || comp.compare(key, max(coll, comp)) > 0) {
          throw new NoSuchElementException();
       }
       Collection<T> list = range(coll, key, max(coll, comp), comp);
@@ -266,7 +256,7 @@ public final class Selector {
       if (coll == null || comp == null){
          throw new IllegalArgumentException();
       }
-      if(coll.isEmpty() || comp.compare(key, min(coll, comp)) <= 0) {
+      if(coll.isEmpty() || comp.compare(key, min(coll, comp)) < 0) {
          throw new NoSuchElementException();
       }
       Collection<T> list = range(coll, min(coll, comp), key, comp);

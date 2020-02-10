@@ -139,7 +139,7 @@ public class HandoutExamples {
       //minExamples();
       //maxExamples();
       //kminExamples();
-      //kmaxExamples();
+      kmaxExamples();
       //rangeExamples();
       //ceilingExamples();
       //floorExamples();
