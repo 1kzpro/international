@@ -67,7 +67,20 @@ public final class Selector {
     * @throws        NoSuchElementException as per above
     */
    public static <T> T max(Collection<T> coll, Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty()) {
+         throw new NoSuchElementException();
+      }
+      Iterator<T>	iter = coll.iterator();
+      T max = iter.next();
+      for(T item: coll) {
+         if(comp.compare(item, max) > 0) {
+            max = item;
+         }
+      }
+      return max;
    }
 
 
@@ -130,7 +143,23 @@ public final class Selector {
     */
    public static <T> Collection<T> range(Collection<T> coll, T low, T high,
                                          Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty()) {
+         throw new NoSuchElementException();
+      }
+   
+      Collection<T> list = new ArrayList<T>();
+      for(T item: coll) {
+         if(comp.compare(item, high) <= 0 && comp.compare(item, low) >= 0) {
+            list.add(item);
+         }
+      }
+      if (list.isEmpty()) {
+         throw new NoSuchElementException();
+      }
+      return list;
    }
 
 
@@ -150,7 +179,15 @@ public final class Selector {
     * @throws        NoSuchElementException as per above
     */
    public static <T> T ceiling(Collection<T> coll, T key, Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty() || comp.compare(key, max(coll, comp)) >= 0) {
+         throw new NoSuchElementException();
+      }
+      Collection<T> list = range(coll, key, max(coll, comp), comp);
+      
+      return min(list, comp);
    }
 
 
@@ -170,7 +207,15 @@ public final class Selector {
     * @throws        NoSuchElementException as per above
     */
    public static <T> T floor(Collection<T> coll, T key, Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty() || comp.compare(key, min(coll, comp)) <= 0) {
+         throw new NoSuchElementException();
+      }
+      Collection<T> list = range(coll, min(coll, comp), key, comp);
+      
+      return max(list, comp);
    }
 
 }
