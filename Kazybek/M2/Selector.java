@@ -99,7 +99,35 @@ public final class Selector {
     * @throws        NoSuchElementException as per above
     */
    public static <T> T kmin(Collection<T> coll, int k, Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty() || k > coll.size() || k < 1) {
+         throw new NoSuchElementException();
+      }
+      
+      T lastMin = min(coll, comp);
+      T max = max(coll, comp);
+      Collection<T> list = range(coll, lastMin, max, comp);
+      
+      if (k == 1) {
+         return lastMin;
+      }
+      else {
+         list.remove(lastMin);
+         for(int i = 0; i < k - 1; i++){
+            T newMin = min(list, comp);
+            if(lastMin == newMin) {
+               k = k + 1;
+            }
+            lastMin = newMin;
+            if (lastMin == max && i+1 < k) {
+               throw new NoSuchElementException();
+            }
+            list.remove(lastMin);
+         }
+      }
+      return lastMin;
    }
 
 
@@ -118,7 +146,35 @@ public final class Selector {
     * @throws        NoSuchElementException as per above
     */
    public static <T> T kmax(Collection<T> coll, int k, Comparator<T> comp) {
-      return null;
+      if (coll == null || comp == null){
+         throw new IllegalArgumentException();
+      }
+      if(coll.isEmpty() || k > coll.size() || k < 1) {
+         throw new NoSuchElementException();
+      }
+      
+      T lastMax = max(coll, comp);
+      T min = min(coll, comp);
+      Collection<T> list = range(coll, min, lastMax, comp);
+      
+      if (k == 1) {
+         return lastMax;
+      }
+      else {
+         list.remove(lastMax);
+         for(int i = 0; i < k - 1; i++){
+            T newMax = max(list, comp);
+            if(lastMax == newMax) {
+               k = k + 1;
+            }
+            lastMax = newMax;
+            if (lastMax == min && i+1 < k) {
+               throw new NoSuchElementException();
+            }
+            list.remove(lastMax);
+         }
+      }
+      return lastMax;
    }
 
 
