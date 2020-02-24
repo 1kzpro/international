@@ -32,7 +32,7 @@ public class Line implements Comparable<Line>, Iterable<Point> {
    public Line(Collection<Point> c) {
       line = new TreeSet<Point>();
       for (Point point: c) {
-         line.add(point);
+         add(point);
       }
    }
  
