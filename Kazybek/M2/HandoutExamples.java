@@ -136,13 +136,13 @@ public class HandoutExamples {
     * @param args command line arguments (unused)
     */
    public static void main(String[] args) {
-      //minExamples();
-      //maxExamples();
-      //kminExamples();
+      minExamples();
+      maxExamples();
+      kminExamples();
       kmaxExamples();
-      //rangeExamples();
-      //ceilingExamples();
-      //floorExamples();
+      rangeExamples();
+      ceilingExamples();
+      floorExamples();
    }
 
 
