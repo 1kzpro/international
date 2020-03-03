@@ -140,12 +140,15 @@ public class ArrayIndexedList<T> implements IndexedList<T> {
 	/** Moves elements from index..rear-1 one index to the right. */
 	private void shiftRight(int index) {
 		assert !isFull();
-		// you must fill this in
+		for(int i = index; i < rear; i++) {
+         T element = elements[i + 1];
+         elements[i + 1] = elements[index];
+         elements[index] = element;
+      }
 	}
 
 	/** Returns true if specified index is in the legal range, false otherwise. */
 	private boolean validIndex(int index) {
 		return (index >= 0) && (index < rear);
 	}
-
 }

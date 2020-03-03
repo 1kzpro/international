@@ -22,7 +22,7 @@ public class ArrayIndexedListClient {
 		list.add("C", 2);
 		list.add("D", 3);
 
-		list.add("E", 5);
+		list.add("F", 4);
 
 		list.add("E", 1);
 	}
