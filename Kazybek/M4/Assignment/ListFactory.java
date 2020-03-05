@@ -3,9 +3,9 @@
  * Implements the factory method pattern (https://en.wikipedia.org/wiki/Factory_method_pattern)
  * for lists in this assignment.
  *
- * @author YOUR NAME (YOU@auburn.edu)
+ * @author Kazybek Mizam (kzm0099@auburn.edu)
  * @author Dean Hendrix (dh@auburn.edu)
- * @version TODAY
+ * @version 03/05/2020
  */
 public class ListFactory {
 
@@ -16,7 +16,8 @@ public class ListFactory {
       // Replace the following return statement with one that returns
       // an instance of the class you wrote to implement the
       // RandomizedList interface.
-      return null;
+      int capacity = 5;
+      return new Part1<T>(capacity);
    }
 
    /**
