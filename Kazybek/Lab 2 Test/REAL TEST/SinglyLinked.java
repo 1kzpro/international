@@ -41,7 +41,7 @@ class SinglyLinked<T extends Comparable<T>> {
             }
         
             Node n = front.next;
-            T maxElement = n.element;
+            T maxElement = front.element;
             while(n != null) {
                   maxElement = n.element.compareTo(maxElement) > 0 ? n.element : maxElement;
                   n = n.next;
