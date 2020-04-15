@@ -22,7 +22,8 @@ public class ExampleClient {
     /** Drives execution. */
     public static void main(String[] args) throws FileNotFoundException {
         WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
-
+        
+        System.out.println(doublets.getHammingDistance("cat", "hat"));
         System.out.println(doublets.getHammingDistance("tiger", "tiger"));
         System.out.println(doublets.getHammingDistance("tiger", "eagle"));
         System.out.println(doublets.getHammingDistance("war", "eagle"));
@@ -40,6 +41,8 @@ public class ExampleClient {
         System.out.println(doublets.getNeighbors("tiger"));
 
         System.out.println(doublets.getMinLadder("cat", "hat"));
+        System.out.println(doublets.getMinLadder("cat", "dog"));
+        System.out.println(doublets.getMinLadder("open", "shut"));
     }
 }
 
