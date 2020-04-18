@@ -24,6 +24,7 @@ public class ExampleClient {
         WordLadderGame doublets = new Doublets(new FileInputStream(new File("sowpods.txt")));
         
         System.out.println(doublets.getHammingDistance("cat", "hat"));
+        System.out.println(doublets.getHammingDistance("hat", "cat"));
         System.out.println(doublets.getHammingDistance("tiger", "tiger"));
         System.out.println(doublets.getHammingDistance("tiger", "eagle"));
         System.out.println(doublets.getHammingDistance("war", "eagle"));
@@ -37,12 +38,18 @@ public class ExampleClient {
 
         System.out.println(doublets.isWordLadder(Arrays.asList("cat", "cot", "zot", "dot")));
         System.out.println(doublets.isWordLadder(Arrays.asList("cat", "cot", "pot", "dot")));
+        System.out.println(doublets.isWordLadder(Arrays.asList("cat", "cat", "cat", "cat", "cat")));
 
         System.out.println(doublets.getNeighbors("tiger"));
 
         System.out.println(doublets.getMinLadder("cat", "hat"));
+        System.out.println(doublets.getMinLadder("hat", "cat"));
         System.out.println(doublets.getMinLadder("cat", "dog"));
         System.out.println(doublets.getMinLadder("open", "shut"));
+        System.out.println(doublets.getMinLadder("cat", "aui"));
+        System.out.println(doublets.getMinLadder("warm", "cold"));
+        System.out.println(doublets.getMinLadder("aa", "aa"));
+        System.out.println(doublets.getMinLadder("bat", "cat"));
     }
 }
 
