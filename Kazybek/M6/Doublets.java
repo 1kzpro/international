@@ -3,6 +3,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
@@ -18,9 +19,10 @@ import java.util.stream.Collectors;
 /**
  * Provides an implementation of the WordLadderGame interface. 
  *
- * @author Your Name (you@auburn.edu)
+ * @author Kazybek Mizam (you@auburn.edu)
  * @author Dean Hendrix (dh@auburn.edu)
- * @version 2019-03-29
+ * @version 2019-03-29 DH
+ * @version 2020-04-10 KM
  */
 public class Doublets implements WordLadderGame {
 
@@ -33,7 +35,7 @@ public class Doublets implements WordLadderGame {
     // ARE TreeSet (a red-black tree) OR HashSet (a closed addressed hash      //
     // table with chaining).
     /////////////////////////////////////////////////////////////////////////////
-    TreeSet<String> lexicon;
+   TreeSet<String> lexicon;
 
     /**
      * Instantiates a new instance of Doublets with the lexicon populated with
@@ -41,29 +43,29 @@ public class Doublets implements WordLadderGame {
      * in different ways as long as the first string on each line is a word to be
      * stored in the lexicon.
      */
-    public Doublets(InputStream in) {
-        try {
+   public Doublets(InputStream in) {
+      try {
             //////////////////////////////////////
             // INSTANTIATE lexicon OBJECT HERE  //
             //////////////////////////////////////
-            lexicon = new TreeSet<String>();
-            Scanner s =
+         lexicon = new TreeSet<String>();
+         Scanner s =
                 new Scanner(new BufferedReader(new InputStreamReader(in)));
-            while (s.hasNext()) {
-               String str = s.next();
+         while (s.hasNext()) {
+            String str = s.next();
                 /////////////////////////////////////////////////////////////
                 // INSERT CODE HERE TO APPROPRIATELY STORE str IN lexicon. //
                 /////////////////////////////////////////////////////////////
-                lexicon.add(str.toUpperCase());
-               s.nextLine();
-            }
-            in.close();
-        }
-        catch (java.io.IOException e) {
-            System.err.println("Error reading from InputStream.");
-            System.exit(1);
-        }
-    }
+            lexicon.add(str.toUpperCase());
+            s.nextLine();
+         }
+         in.close();
+      }
+      catch (java.io.IOException e) {
+         System.err.println("Error reading from InputStream.");
+         System.exit(1);
+      }
+   }
 
 
     //////////////////////////////////////////////////////////////
@@ -88,12 +90,12 @@ public class Doublets implements WordLadderGame {
       }
       
       int dist_counter = 0;
-   	for(int i = 0; i < str1.length(); i++) {
-   		if (str1.charAt(i) != str2.charAt(i)) {
-   			dist_counter += 1;
+      for(int i = 0; i < str1.length(); i++) {
+         if (str1.charAt(i) != str2.charAt(i)) {
+            dist_counter += 1;
          }
       }
-   	return dist_counter;
+      return dist_counter;
    }
 
 
@@ -111,7 +113,53 @@ public class Doublets implements WordLadderGame {
     */
    public List<String> getMinLadder(String start, String end) {
       List<String> ladder = new ArrayList<String>();
+      
+      if (!(isWord(start) && isWord(end)) ||
+            getHammingDistance(start, end) == -1) {
+         return ladder;
+      }
+      
+      TreeSet<String> visited = new TreeSet<String>();
+      Deque<Node> queue = new ArrayDeque<>();
+      queue.addLast(new Node(start, null));
+      
+      visited.add(start);
+      
+      while (!queue.isEmpty()) {
+         Node n = queue.removeFirst();
+         String word = n.word;
+         
+         if (word.equalsIgnoreCase(end)) {
+            Node p = n;
+            while(p != null) {
+               ladder.add(0, p.word);
+               p = p.predecessor;
+            }
+            return ladder;
+         }
+         
+         for (String neighbor : getNeighbors(word)) {
+            if (!(visited.contains(neighbor))) {
+               visited.add(neighbor);
+               queue.addLast(new Node(neighbor, n));
+            }
+         }
+      }
+      
       return ladder;
+   }
+    
+    /**
+     * Constructs a node for linking positions together.
+     */
+   private class Node {
+      String word;
+      Node predecessor;
+   
+      public Node(String p, Node pred) {
+         word = p;
+         predecessor = pred;
+      }
    }
 
 
@@ -125,30 +173,18 @@ public class Doublets implements WordLadderGame {
    public List<String> getNeighbors(String word) {
       List<String> neighbors = new ArrayList<String>();
       
-      String ceiling = lexicon.ceiling(word);
-      String floor = lexicon.floor(word);
-      
-      if(ceiling == null) {
-         ceiling = word;
+      if (word.isEmpty()) {
+         return neighbors;
       }
-      if(floor == null) {
-         floor = word;
-      }
-      
-      if(floor.equals(ceiling)) {
-         SortedSet<String> possibleNeighbors = lexicon.subSet(floor, true, ceiling, true);
-         
-         for(String neighbor: possibleNeighbors) {
-            int relation = getHammingDistance(word, neighbor);
-            if (relation > -1 && relation < 2) {
+   
+      for(int i = 0; i < word.length(); i++) {
+         for(char letter = 'a'; letter <= 'z'; letter++) {
+            char[] wordArray = word.toCharArray();
+            wordArray[i] = letter;
+            String neighbor = new String(wordArray);
+            if (word.charAt(i) != letter && isWord(neighbor)) {
                neighbors.add(neighbor);
             }
-         }
-      }
-      else {
-         int relation = getHammingDistance(word, floor);
-         if (relation > -1 && relation < 2) {
-               neighbors.add(floor);
          }
       }
       
@@ -184,17 +220,29 @@ public class Doublets implements WordLadderGame {
      * @return          true if the given sequence is a valid word ladder,
      *                       false otherwise
      */
-    public boolean isWordLadder(List<String> sequence) {
-      String start = sequence.get(0);
-      String end = sequence.get(sequence.size() - 1);
-      List<String> sequence2 = getMinLadder(start, end);
-      if (sequence.equals(sequence2)) {
-         return true;
+   public boolean isWordLadder(List<String> sequence) {
+      if (sequence.isEmpty()) {
+         return false;
       }
-      return false;
-    }
-    
-    private bfs() {
-    }
+      
+      if (sequence.size() == 1) {
+         if (isWord(sequence.get(0))) {
+            return true;
+         }
+         return false;
+      }
+      
+      for (int i = 1; i < sequence.size(); i++) {
+         String startWord = sequence.get(i - 1);
+         String endWord = sequence.get(i);
+         if (!(isWord(startWord) && isWord(endWord))) {
+            return false;
+         }
+         if (getHammingDistance(startWord, endWord) != 1) {
+            return false;
+         }
+      }
+      return true;
+   }
 }
 
