@@ -6,6 +6,9 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.Iterator;
 import java.util.TreeSet;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
 /**
  * MarkovModel.java Creates an order K Markov model of the supplied source
  * text. The value of K determines the size of the "kgrams" used to generate
@@ -23,6 +26,7 @@ public class MarkovModel {
    private HashMap<String, String> model;
    private TreeSet<String> temp;
    private char[][] d2;
+   private HashMap<String, Integer> frequent;
    // add other fields as you need them ...
 
 
@@ -175,10 +179,33 @@ public class MarkovModel {
     * text.
     */
    public char getNextChar(String kgram) {
+      frequent = new HashMap();
+      char letter = 'a';
       String a = model.get(kgram);
       char[] b = a.toCharArray();
-      char[] c = sourceText.toCharArray();
-      return b[0];
+      int q = 0;
+      while (q < b.length) {
+         int count = 0;
+         Iterator ite = temp.iterator();
+         while(ite.hasNext()){  
+            String word = (String)ite.next();
+            if (word.contains(String.valueOf(b[q]))) {
+               count++;
+            }
+         }
+         // Integer count2 = new Integer(count);
+         String b1 = String.valueOf(b[q]);
+         frequent.put(b1, count);
+         q++;
+      }
+      List sorted = new ArrayList(frequent.values());
+      Collections.reverse(sorted);
+      for (int v = 0; v < b.length; v++) {
+         if (frequent.get(String.valueOf(b[v])) == sorted.get(0)) {
+            letter = b[v];
+         }
+      }
+      return letter;
    }
 
 
