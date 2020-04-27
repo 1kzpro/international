@@ -27,6 +27,7 @@ public class MarkovModel {
    private TreeSet<String> temp;
    private char[][] d2;
    private HashMap<String, Integer> frequent;
+   private int pjx;
    // add other fields as you need them ...
 
 
@@ -86,8 +87,9 @@ public class MarkovModel {
             j = a - 1;
          }
       }
+      pjx = sourceText.length();
       Iterator ite = temp.iterator();
-      d2 = new char[temp.size()][temp.size()];
+      d2 = new char[pjx][pjx];
       int row = 0;
       while(ite.hasNext()){ 
          int num2 = 0;
@@ -151,14 +153,14 @@ public class MarkovModel {
     */
    public Set<String> getAllKgrams() {
       Iterator ite = temp.iterator();
-      String[] temp1 = new String[temp.size()];
+      String[] temp1 = new String[pjx];
       int i = 0;
       while(ite.hasNext()){  
          temp1[i] = (String)ite.next();
          i++;
       }
       String neig = "";
-      for (int row = 0; row < d2[0].length; row++) {
+      for (int row = 0; row < i; row++) {
          for (int column = 0; column < d2.length; column++) {
             if (d2[row][column] != '\0') {
                neig += d2[row][column];
@@ -179,33 +181,50 @@ public class MarkovModel {
     * text.
     */
    public char getNextChar(String kgram) {
-      frequent = new HashMap();
-      char letter = 'a';
-      String a = model.get(kgram);
-      char[] b = a.toCharArray();
-      int q = 0;
-      while (q < b.length) {
-         int count = 0;
-         Iterator ite = temp.iterator();
-         while(ite.hasNext()){  
-            String word = (String)ite.next();
-            if (word.contains(String.valueOf(b[q]))) {
-               count++;
+      Random a = new Random();
+      String b = "";
+      int num = 0;
+      for (String word: model.keySet()) {
+         if (word.equals(kgram)) {
+            b = model.get(kgram);
+            int num1 = word.length();
+            if (num1 > 0) {
+               num = a.nextInt() + 1;
             }
          }
-         // Integer count2 = new Integer(count);
-         String b1 = String.valueOf(b[q]);
-         frequent.put(b1, count);
-         q++;
       }
-      List sorted = new ArrayList(frequent.values());
-      Collections.reverse(sorted);
-      for (int v = 0; v < b.length; v++) {
-         if (frequent.get(String.valueOf(b[v])) == sorted.get(0)) {
-            letter = b[v];
-         }
+      if (!b.equals("")) {
+         return b.charAt(num - 1);
       }
-      return letter;
+      return '\u0000';
+   
+      // frequent = new HashMap();
+   //       char letter = 'a';
+   //       String a = model.get(kgram);
+   //       char[] b = a.toCharArray();
+   //       int q = 0;
+   //       while (q < b.length) {
+   //          int count = 0;
+   //          Iterator ite = temp.iterator();
+   //          while(ite.hasNext()){  
+   //             String word = (String)ite.next();
+   //             if (word.contains(String.valueOf(b[q]))) {
+   //                count++;
+   //             }
+   //          }
+   //          // Integer count2 = new Integer(count);
+   //          String b1 = String.valueOf(b[q]);
+   //          frequent.put(b1, count);
+   //          q++;
+   //       }
+   //       List sorted = new ArrayList(frequent.values());
+   //       Collections.reverse(sorted);
+   //       for (int v = 0; v < b.length; v++) {
+   //          if (frequent.get(String.valueOf(b[v])) == sorted.get(0)) {
+   //             letter = b[v];
+   //          }
+   //       }
+   //       return letter;
    }
 
 
