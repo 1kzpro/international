@@ -22,7 +22,7 @@ public class MarkovModel {
    private HashMap<String, String> model;
 
    // add other fields as you need them ...
-
+   private String first;
 
    /**
     * Reads the contents of the file sourceText into a string, then calls
@@ -59,21 +59,43 @@ public class MarkovModel {
     * Builds an order K Markov model of the string sourceText.
     */
    private void buildModel(int K, String sourceText) {
-      for (int i = 0; i < sourceText.length(); i++) {
-         System.out.println(sourceText.charAt(i));
+      sourceText = sourceText.replaceAll("\n", " ");
+      sourceText = sourceText.replaceAll("\r", "");
+      int i = 0;
+      first = sourceText.substring(i, i + K);
+   
+      while (i + K < sourceText.length() + 1) {
+         String curr = sourceText.substring(i, i + K);
+         String item;
+         try {
+            item = sourceText.substring(i + K, i + K + 1);
+         } catch (StringIndexOutOfBoundsException e) {
+            item = null;
+         }
+      
+         if (model.putIfAbsent(curr, item) != null) {
+            String newitem = model.get(curr);
+            newitem += item;
+            model.put(curr, newitem);
+         }
+         i++;
       }
    }
 
 
    /** Returns the first kgram found in the source text. */
    public String getFirstKgram() {
-      return null;
+      return first;
    }
 
 
    /** Returns a kgram chosen at random from the source text. */
    public String getRandomKgram() {
-      return null;
+      Random random = new Random();
+      Object[] keys = getAllKgrams().toArray();
+      int i = random.nextInt(model.size());
+      String kgram = keys[i].toString();
+      return kgram;
    }
 
 
@@ -83,7 +105,7 @@ public class MarkovModel {
     * DO NOT CHANGE THIS METHOD.
     *
     */
-    public Set<String> getAllKgrams() {
+   public Set<String> getAllKgrams() {
       return model.keySet();
    }
 
@@ -95,7 +117,11 @@ public class MarkovModel {
     * text.
     */
    public char getNextChar(String kgram) {
-      return '\u0000';
+      String temp = model.get(kgram);
+      Random random = new Random();
+      int i = random.nextInt(temp.length());
+      char ret = temp.charAt(i);
+      return ret;
    }
 
 
@@ -106,7 +132,7 @@ public class MarkovModel {
     * DO NOT CHANGE THIS METHOD.
     *
     */
-    @Override
+   @Override
     public String toString() {
       return model.toString();
    }
