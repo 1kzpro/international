@@ -1,4 +1,4 @@
-# -> One line comment
+# -> One line comment https://www.w3schools.com/python/default.asp
 
 # ''
 # ""
@@ -15,19 +15,22 @@
 
 """
     This is also long comment
+    /*
+        This is Java
+    */
 """
 
-a = 'Yuhao' # variable a
-b = "Yuhao" # variable b
+# a = 'Yuhao' # variable a
+# b = "Kazybek" # variable b
 
-# if (a == b): # same as a.equals(b) in java
+# if a == b: # same as a.equals(b) in java
 #     #here
 #     print('They are same') # same as System.out.println("They are same")
 
-# # : same as {} in java
-# # [] -> list
+# : same as {} in java
+# [] -> list
 
-# if a == b:
+# if a == b: 
 #     c = 'Kazybek'
 #     print('They are same')
 # elif a != b:
@@ -38,49 +41,92 @@ b = "Yuhao" # variable b
 # else if -> elif
 
 #ifKeyPressed -> if_key_pressed
+# ifKeyPressed = True # it will work fine
+# if_key_pressed = True # just little python standard
 
-a, b = 'Yuhao', 'Kazybek'
-c = 5 # int
-# str means string
+a = 'Yuhao' # variable a
+b = "Kazybek" # variable b
+# c = 'Doge'
+# a, b, c = 'Yuhao' + ' Zhu', 7, 'Doge'
 
-# print(a + ' ' + b + ' ' + str(c))
+# number = 5.7
 
-# [] -> list
+# number = 'Yuhao'
+
+# number = True
+
+# print(type(number))
+
+# #the variable can be anything and it defines automatically with this language
+# c = 5.7 # int
+# # str means string
+
+# d = int(c)
+
+# print(a + ' ' + b + ' ' + str(c)) # casting float->int String(5)
+# print(c + 3)
+# , -> + ' ' +
+
+# Python does not have CHAR
+# a = 'A' -> string
+
+# [] -> list #kinda ArrayBag
 # () -> tuple
-# range() -> range
+#range() -> range same as length
 
-# for i in range(5): #i < 5 i++
-#     print(i)
+# int[] a = {1, 2, 3}
 
-#people = ['Yuhao', 'Kazybek', 'Doge']
+# for j in range(5): #i < 5 i++
+#     print(type(j))
+#     print(j)
 
-# for person in people:
-#     print(person)
+# people = ['Yuhao', 'Kazybek', 'Doge']
 
-#people.append('Shanghai') # add Arraybag a; a.add('shaghai')
-#people.remove('Doge')
-#pop(index)
+# __str__
+#len() -> people.length
 
-#print(people)
+# for i in range(len(people)):
+#     print(people[i])
+
+# people.append('Shanghai') # add Arraybag a; a.add('shaghai')
+# people.remove('Doge')
+# people.pop() #removes by index
+
+# print(people)
 
 # people = ('Yuhao', 'Kazybek', 'Doge')
+# a = people.index('Doge')
+# print(a)
 
 # print(people[0])
 
 
 # dictionary, map, struct
+# person = {
+#     'name': 'Kazybek'
+# }
+
+# book = {
+#     'name': 'Yuhao',
+#     'price': 1000000000000,
+#     'genre': 'Hentai',
+#     'owner': person
+# }
+
 # car = {
 #     'model': 'Benz',
 #     'engine': 'v8',
 #     'color': 'Space Gray',
-#     'range': 1000
+#     'range': 1000,
+#     'owners': ['Yuhao', 'Doge'],
+#     'book': book
 # }
 
-# car['range'] += 1000
+# # car['range'] += 1000
 
-# car['engine'] = 'v10'
+# # car['engine'] = 'v10'
 
-# print(car['engine'])
+# print(car['book'])
 
 
 # a = False # boolean
@@ -94,13 +140,19 @@ c = 5 # int
 #     'range': 1000
 # }
 
-# for key, values in car.items():
-#     print(key, values)
+# # for key in car:
+# #     print(key)
 
-# for value in car.values():
+# # print(car.items())
+
+# data = car.items()
+
+# for key, value, price in [('model', 'Benz', 1234), ('engine', 'v8', 1234), ('color', 'Space Gray', 1234), ('range', 1000, 1234)]:
 #     print(value)
 
-# if 'Benz' in car.values():
+# print(car.get('model'))
+
+# if 'k' in ['Benz', 'v8', 'Space Gray', 1000]:
 #     print('Yea')
 # else:
 #     print('Oh no')
@@ -124,3 +176,54 @@ c = 5 # int
 
 # print(a)
 # print(b)
+
+# Methods function
+
+
+# def greeting(a, b):
+#     print('Hello', a, b)
+
+name = 'Doge'
+name2 = 'Yuhao'
+# greeting(name, name2)
+
+
+# class Person:
+#     name = 'Kazybek'
+#     def __init__(self, a, b):
+#         self.name1 = a
+#         self.name2 = b
+
+#     def greeting(self, func):
+#         return 'Have ' + func() + ' Day'
+
+#     def print_all(self, day):
+#         print(self.name1, self.name2, self.name, day)
+
+#     @staticmethod
+#     def method():
+#         print('LOL')
+
+# person = Person(name, name2)
+
+# def good():
+#     return 'Good'
+
+# return_value = person.greeting(good)
+
+# print(return_value)
+
+# person.method()
+
+def greeting(func):
+    def wrapper():
+        print("Hello", func(), 'my ge men')
+    return wrapper
+
+@greeting
+def yuhao():
+    return 'Yuhao'
+
+yuhao()
+
+#@greeting -> greeting(yuhao)
