@@ -188,21 +188,21 @@ name2 = 'Yuhao'
 # greeting(name, name2)
 
 
-# class Person:
-#     name = 'Kazybek'
-#     def __init__(self, a, b):
-#         self.name1 = a
-#         self.name2 = b
+class Person:
+    name = 'Kazybek'
+    def __init__(self, filepath):
+        self.name1 = a
+        self.name2 = b
 
-#     def greeting(self, func):
-#         return 'Have ' + func() + ' Day'
+    def greeting(self, func):
+        return 'Have ' + func() + ' Day'
 
-#     def print_all(self, day):
-#         print(self.name1, self.name2, self.name, day)
+    def print_all(self, day):
+        print(self.name1, self.name2, self.name, day)
 
-#     @staticmethod
-#     def method():
-#         print('LOL')
+    @staticmethod
+    def method():
+        print('LOL')
 
 # person = Person(name, name2)
 
