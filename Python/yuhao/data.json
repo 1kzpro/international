@@ -1,0 +1,12 @@
+{
+    "name": "John Smith",
+    "age": 20,
+    "major": "Software Engineering",
+    "college": "College of Engineering",
+    "term": "Spring",
+    "year": 2020,
+    "credits_taken": "62",
+    "credits_reaining": "58",
+    "advisor": "Chen Whu",
+    "gpa": 3.8
+}
