@@ -17,3 +17,8 @@ class Student:
         self.advisor = advisor
         self.gpa = gpa
         print(self.data1, self.name, self.age, self.college, self.term, self.year, self.credits_taken, self.credits_reaining, self.advisor, self.gpa)
+
+
+student = Student(filepath)
+
+print(student.term)
