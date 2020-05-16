@@ -1,0 +1,46 @@
+{
+    "person": {
+        "name": "John Smith",
+        "age": 20,
+        "birthday": "04/08/2000"
+    },
+    "major": "Software Engineering",
+    "college": "College of Engineering",
+    "term": "Spring",
+    "years": {
+        "2019": {
+            "spring": {
+                "Physics 1600": "B",
+                "Math 1610": "B",
+                "Public Speaking": "A",
+                "English Composition": "A"
+            },
+            "summer": null,
+            "fall": {
+                "Physics 1610": "C",
+                "Math 1620": "B",
+                "Geology": "A",
+                "English Composition 2": "A"
+            }
+        },
+        "2020" : {
+            "spring": {
+                "Math 2630": "A",
+                "Math 2660": "C",
+                "Geology 2": "A",
+                "Digital Logic Circuits": "A"
+            },
+            "summer": null,
+            "fall": {
+                "Software Construction": null,
+                "Statistics 1": null,
+                "Ethics": null,
+                "Discrete Structures": null
+            }
+        }
+    },
+    "credits_taken": "62",
+    "credits_reaining": "58",
+    "advisor": "Chen Whu",
+    "gpa": 3.8
+}
