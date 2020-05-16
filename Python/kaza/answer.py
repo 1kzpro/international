@@ -15,6 +15,8 @@ class Student:
         self.gpa = data['gpa']
 
     def __str__(self):
+        #name local variable
+        #this.name instance or class variable
         text = 'Student\n'
         text += '1. Name: ' + self.name
         text += '\n2. Age: ' + str(self.age)
@@ -31,16 +33,16 @@ class Student:
 filepath = 'Python/kaza/data.json'
 student = Student(filepath)
 
-print('Student')
-print('1. Name:', student.name)
-print('2. Age:', student.age)
-print('3. Major:', student.major)
-print('4. College:', student.college)
-print('5. Term:', student.term)
-print('5. Year:', student.year)
-print('6. Credits Taken:', student.credits_taken)
-print('7. Credits Remaining:', student.credits_remaining)
-print('8. Advisor:', student.advisor)
-print('9. GPA:', student.gpa)
+# print('Student')
+# print('1. Name:', student.name)
+# print('2. Age:', student.age)
+# print('3. Major:', student.major)
+# print('4. College:', student.college)
+# print('5. Term:', student.term)
+# print('5. Year:', student.year)
+# print('6. Credits Taken:', student.credits_taken)
+# print('7. Credits Remaining:', student.credits_remaining)
+# print('8. Advisor:', student.advisor)
+# print('9. GPA:', student.gpa)
 
 print(student)

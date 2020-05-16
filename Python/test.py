@@ -1,11 +1,9 @@
 import doge.student as hello
-# import yuhao.answer as y
+import yuhao.answer as y
 
 filepath = 'Python/data.json'
 
 student1 = hello.Student(filepath)
-# student2 = y.Student(filepath)
+student2 = y.Student(filepath)
 
-# print(student1.gpa)
-
-print(student1.term)
+print(student1)

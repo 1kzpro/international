@@ -22,7 +22,13 @@ class Student:
         self.term = data["term"]
         self.year = data["year"]
         self.credits_taken = data["credits_taken"]
-        self.credits_reaining = data["credits_reaining"]
+        self.credits_reaining = data["credits_remaining"]
         self.advisor = data["advisor"]
         self.gpa = data["gpa"]
         self.levels = ['FRESHMAN', 'SOPHOMORE', 'JUNIOR', 'SENIOR'] # Class constants and so on
+
+    def example(self):
+        pass
+
+    def __str__(self):
+        return 'Student'
