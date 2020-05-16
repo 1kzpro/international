@@ -1,5 +1,5 @@
 import task1
-filepath = 'assignment/data.json'
+filepath = 'Python/data.json'
 data = task1.read_json_file(filepath)
 name = data["name"]
 age = data["age"]
@@ -18,7 +18,11 @@ print(major)
 print(college)
 print(term)
 print(year)
-print(credts_taken)
+print(credits_taken)
 print(credits_reaining)
 print(advisor)
 print(gpa)
+
+class Student:
+    def __init__(self, filepath):
+        
