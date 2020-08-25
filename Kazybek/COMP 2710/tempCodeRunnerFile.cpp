@@ -1,0 +1,1 @@
+std::cout << std::to_string(month) << "\t$" << std::to_string(balance) << "\tN/A\tN/A\tN/A\tN/A\n";
