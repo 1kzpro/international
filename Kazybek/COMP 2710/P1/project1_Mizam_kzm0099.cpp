@@ -1,4 +1,8 @@
 /*
+    Project 1
+    @author Kazybek Mizam
+    @version 08/25/20
+
     Documentation for Pointers: https://www.tutorialspoint.com/cprogramming/c_pointers.htm
     Documentation for Prototype: http://www.cplusplus.com/articles/yAqpX9L8/
 */
