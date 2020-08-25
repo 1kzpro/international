@@ -13,7 +13,7 @@
 #include <iomanip>
 #include <sstream>
 
-void input(double *, float *, double *);
+int input(double *, float *, double *);
 int calculate(double *, float *, double *, std::string *, int *, double *);
 void output(std::string *, int *, double *);
 std::string format_precision_2(double);
@@ -31,11 +31,16 @@ int main()
     int months = 0;
     double totalInterest = 0.0;
 
-    input(&loanAmount, &interestRate, &monthlyPayment);
+    short int status_input = input(&loanAmount, &interestRate, &monthlyPayment);
 
-    short int status = calculate(&loanAmount, &interestRate, &monthlyPayment, &calculatedOutput, &months, &totalInterest);
+    if (status_input != 0)
+    {
+        return 0;
+    }
 
-    if (status == 0)
+    short int status_calculate = calculate(&loanAmount, &interestRate, &monthlyPayment, &calculatedOutput, &months, &totalInterest);
+
+    if (status_calculate == 0)
     {
         output(&calculatedOutput, &months, &totalInterest);
     }
@@ -47,14 +52,30 @@ int main()
     return 0;
 }
 
-void input(double *loanAmount, float *interestRate, double *monthlyPayment)
+int input(double *loanAmount, float *interestRate, double *monthlyPayment)
 {
     std::cout << "Loan Amount: ";
     std::cin >> *loanAmount;
+    if(*loanAmount <= 0) {
+        std::cout << "Loan amount should be positive number";
+        return 1;
+    }
+
     std::cout << "Interest Rate(% per year): ";
     std::cin >> *interestRate;
+    if(*interestRate < 0) {
+        std::cout << "Interest rate % per year should be non-negative number";
+        return 1;
+    }
+
     std::cout << "Monthly Payments: ";
     std::cin >> *monthlyPayment;
+    if(*monthlyPayment <= 0) {
+        std::cout << "Monthly payments should be positive number";
+        return 1;
+    }
+
+    return 0;
 }
 
 int calculate(double *loanAmount, float *interestRate, double *monthlyPayment, std::string *calculatedOutput, int *months, double *totalInterest)
@@ -75,7 +96,7 @@ int calculate(double *loanAmount, float *interestRate, double *monthlyPayment, s
 
         if (month == 0)
         {
-            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\tN/A\tN/A\tN/A\tN/A\n";
+            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\tN/A\tN/A\tN/A\t\tN/A\n";
             continue;
         }
 
@@ -88,9 +109,9 @@ int calculate(double *loanAmount, float *interestRate, double *monthlyPayment, s
 
         // Formatting issue solving
         if (balance < 1000) {
-            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\t\t$" + format_precision_2(payment) + "\t$" + format_precision_2(monthlyInterestRate) + "\t$" + format_precision_2(interest) + "\t$" + format_precision_2(principial) + "\n";
+            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\t\t$" + format_precision_2(payment) + "\t$" + format_precision_2(monthlyInterestRate) + "\t$" + format_precision_2(interest) + "\t\t$" + format_precision_2(principial) + "\n";
         } else {
-            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\t$" + format_precision_2(payment) + "\t$" + format_precision_2(monthlyInterestRate) + "\t$" + format_precision_2(interest) + "\t$" + format_precision_2(principial) + "\n";
+            *calculatedOutput += std::to_string(month) + "\t$" + format_precision_2(balance) + "\t$" + format_precision_2(payment) + "\t$" + format_precision_2(monthlyInterestRate) + "\t$" + format_precision_2(interest) + "\t\t$" + format_precision_2(principial) + "\n";
         }
         (*months)++;
         *totalInterest += interest;
@@ -103,8 +124,8 @@ void output(std::string *calculatedOutput, int *months, double *totalInterest)
 {
     std::cout << "**********************************************************\n";
     std::cout << "\tAmortization Table\n";
-    std::cout << "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n";
     std::cout << "**********************************************************\n";
+    std::cout << "Month\tBalance\t\tPayment\tRate\tInterest\tPrincipal\n";
     std::cout << *calculatedOutput;
     std::cout << "**********************************************************\n";
     std::cout << "\n";
