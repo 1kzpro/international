@@ -56,23 +56,23 @@ int input(double *loanAmount, float *interestRate, double *monthlyPayment)
 {
     std::cout << "Loan Amount: ";
     std::cin >> *loanAmount;
-    if(*loanAmount <= 0) {
-        std::cout << "Loan amount should be positive number";
-        return 1;
+    while(*loanAmount <= 0) {
+        std::cout << "Loan amount should be positive number: ";
+        std::cin >> *loanAmount;
     }
 
     std::cout << "Interest Rate(% per year): ";
     std::cin >> *interestRate;
-    if(*interestRate < 0) {
-        std::cout << "Interest rate % per year should be non-negative number";
-        return 1;
+    while(*interestRate < 0) {
+        std::cout << "Interest rate % per year should be non-negative number: ";
+        std::cin >> *interestRate;
     }
 
     std::cout << "Monthly Payments: ";
     std::cin >> *monthlyPayment;
-    if(*monthlyPayment <= 0) {
-        std::cout << "Monthly payments should be positive number";
-        return 1;
+    while(*monthlyPayment <= 0) {
+        std::cout << "Monthly payments should be positive number: ";
+        std::cin >> *monthlyPayment;
     }
 
     return 0;
