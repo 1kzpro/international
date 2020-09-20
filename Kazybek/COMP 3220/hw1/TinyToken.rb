@@ -14,7 +14,14 @@ class Token
 	LPAREN = "("
 	RPAREN = ")"
 	ADDOP  = "+"
+	SUBOP  = "-"
+	MULOP  = "*"
+	DIVOP  = "/"
 	WS = "whitespace"
+	EQ = "="
+	ID = "id"
+	INT = "int"
+	PRINT = "print"
 # add the rest of the tokens needed based on the grammar
 # specified in the Scanner class "TinyScanner.rb"
 
@@ -34,6 +41,6 @@ class Token
 	
 # to string method
 	def to_s
-		return "#{@type} #{@text}"
+		return "Next token is: #{@type} Next lexeme is: #{@text}"
 	end
 end

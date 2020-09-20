@@ -62,7 +62,7 @@ class Scanner
 			return Token.new(Token::EOF,"eof")
 				
 		elsif (whitespace?(@c))
-			str =""
+			str = ""
 		
 			while whitespace?(@c)
 				str += @c
@@ -71,24 +71,71 @@ class Scanner
 		
 			tok = Token.new(Token::WS,str)
 			return tok
-		# elsif ...
-		# more code needed here! complete the code here 
-		# so that your lexer can correctly recognize,
-		# display and return all tokens
-		# in our grammar that we found in the source code file
+
+		elsif (letter?(@c))
+			str = ""
+
+			while letter?(@c)
+				str += @c
+				nextCh()
+			end
+			
+			tok = str == "print" ? Token.new(Token::PRINT,str) : Token.new(Token::ID,str)
+			return tok
+
+		elsif (numeric?(@c))
+			str = ""
+
+			while numeric?(@c)
+				str += @c
+				nextCh()
+			end
+			
+			tok = Token.new(Token::INT,str)
+			return tok
 		
-		# FYI: You don't HAVE to just stick to if statements
-		# any type of selection statement "could" work. We just need
-		# to be able to programatically identify tokens that we 
-		# encounter in our source code file.
-		
-		# don't want to give back nil token!
-		# remember to include some case to handle
-		# unknown or unrecognized tokens.
-		# below I make the token that you should pass back
-		tok = Token.new("unknown","unknown")
+		elsif (operator?(@c))
+			
+			case @c
+			when "+"
+				tok = Token.new(Token::ADDOP,@c)
+			when "-"
+				tok = Token.new(Token::SUBOP,@c)
+			when "*"
+				tok = Token.new(Token::MULOP,@c)
+			when "/"
+				tok = Token.new(Token::DIVOP,@c)
+			end
+			
+			nextCh()
+			return tok
+
+		elsif (parenthesis?(@c))
+
+			case @c
+			when "("
+				tok = Token.new(Token::LPAREN,@c)
+			when ")"
+				tok = Token.new(Token::RPAREN,@c)
+			end
+
+			nextCh()
+			return tok
+
+		elsif (assignment?(@c))
+
+			tok = Token.new(Token::EQ,@c)
+
+			nextCh()
+			return tok
+
+		else
+			tok = Token.new("unknown",@c)
+
+			nextCh()
+			return tok
 		end
-	
+	end
 end
 #
 # Helper methods for Scanner
@@ -105,5 +152,14 @@ def whitespace?(lookAhead)
 	lookAhead =~ /^(\s)+$/
 end
 
+def operator?(lookAhead)
+	lookAhead =~ /[+]|[-]|[*]|[\/]/
+end
 
+def assignment?(lookAhead)
+	lookAhead =~ /[=]/
+end
 
+def parenthesis?(lookAhead)
+	lookAhead =~ /[(]|[)]/
+end

@@ -1,5 +1,5 @@
-load "path to TinyToken.rb"
-load "path to TinyScanner.rb"
+load "TinyToken.rb"
+load "TinyScanner.rb"
 # if the file(s) are in the same directory, you can simply precede
 # the file name(s) with ./
 
@@ -9,12 +9,12 @@ load "path to TinyScanner.rb"
 # simply include the file name, otherwise, you will need
 # to specify the entire path to the file as we did above
 # to load the other ruby modules
-scan = Scanner.new("filename.txt")
+scan = Scanner.new("input2.tiny")
 tok = scan.nextToken()
 
 # the code below will open a file so that I 
 # can save tokens to it
-tokenFile = File.open("tokens", "w")
+tokenFile = File.open("tokens2", "w")
 
 # keep "fetching" one token at a time, using your scanner
 # until there are no tokens left to scan 
