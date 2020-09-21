@@ -130,7 +130,7 @@ class Scanner
 			return tok
 
 		else
-			tok = Token.new("unknown",@c)
+			tok = Token.new("unknown","unknown")
 
 			nextCh()
 			return tok
