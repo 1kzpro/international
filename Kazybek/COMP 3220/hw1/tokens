@@ -1,34 +1,2134 @@
-Next token is: id Next lexeme is: x
-Next token is: whitespace Next lexeme is:  
-Next token is: = Next lexeme is: =
-Next token is: whitespace Next lexeme is:  
-Next token is: int Next lexeme is: 3
+Next token is: / Next lexeme is: /
+Next token is: * Next lexeme is: *
 Next token is: whitespace Next lexeme is: 
-Next token is: id Next lexeme is: y
+    
+Next token is: id Next lexeme is: Project
 Next token is: whitespace Next lexeme is:  
-Next token is: = Next lexeme is: =
-Next token is: whitespace Next lexeme is:  
-Next token is: int Next lexeme is: 5
+Next token is: int Next lexeme is: 1
 Next token is: whitespace Next lexeme is: 
-Next token is: id Next lexeme is: z
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: author
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Kazybek
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Mizam
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: version
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 08
+Next token is: / Next lexeme is: /
+Next token is: int Next lexeme is: 25
+Next token is: / Next lexeme is: /
+Next token is: int Next lexeme is: 20
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: Documentation
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: for
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Pointers
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: https
+Next token is: unknown Next lexeme is: unknown
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: www
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tutorialspoint
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: com
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: cprogramming
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: c
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: pointers
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: htm
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: Documentation
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: for
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Prototype
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: http
+Next token is: unknown Next lexeme is: unknown
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: www
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cplusplus
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: com
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: articles
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: yAqpX
+Next token is: int Next lexeme is: 9
+Next token is: id Next lexeme is: L
+Next token is: int Next lexeme is: 8
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: Documentation
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: for
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Formatting
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: https
+Next token is: unknown Next lexeme is: unknown
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: thispointer
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: com
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: c
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: convert
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: double
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: to
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: string
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: and
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: manage
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: precision
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: scientific
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: notation
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is: 
+Next token is: * Next lexeme is: *
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is: 
+
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: include
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: iostream
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: include
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: include
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: iomanip
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: include
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: sstream
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: input
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: calculate
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: id Next lexeme is: void
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: float
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: main
+Next token is: ( Next lexeme is: (
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Declaring
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: input
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: variables
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Declaring
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: private
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: use
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: variables
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: calculatedOutput
 Next token is: whitespace Next lexeme is:  
 Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: months
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: totalInterest
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: short
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: status
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: input
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: input
+Next token is: ( Next lexeme is: (
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: if
 Next token is: whitespace Next lexeme is:  
 Next token is: ( Next lexeme is: (
-Next token is: id Next lexeme is: x
+Next token is: id Next lexeme is: status
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: input
 Next token is: whitespace Next lexeme is:  
-Next token is: + Next lexeme is: +
+Next token is: unknown Next lexeme is: unknown
+Next token is: = Next lexeme is: =
 Next token is: whitespace Next lexeme is:  
-Next token is: id Next lexeme is: y
+Next token is: int Next lexeme is: 0
 Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: short
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: status
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: calculate
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: calculate
+Next token is: ( Next lexeme is: (
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: months
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: totalInterest
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: if
+Next token is: whitespace Next lexeme is:  
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: status
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: calculate
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: output
+Next token is: ( Next lexeme is: (
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: months
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: totalInterest
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: else
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Your
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: monthly
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: payment
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: is
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: not
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: enough
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: pay
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: loan
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: input
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Loan
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Amount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: while
+Next token is: ( Next lexeme is: (
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Loan
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: amount
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: should
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: be
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: positive
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Interest
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Rate
+Next token is: ( Next lexeme is: (
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: per
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: year
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: while
+Next token is: ( Next lexeme is: (
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Interest
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: rate
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: per
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: year
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: should
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: be
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: non
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: negative
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Monthly
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Payments
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: while
+Next token is: ( Next lexeme is: (
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Monthly
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: payments
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: should
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: be
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: positive
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cin
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: calculate
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: months
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: totalInterest
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: loanAmount
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: monthlyInterestRate
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: interestRate
 Next token is: whitespace Next lexeme is:  
 Next token is: / Next lexeme is: /
 Next token is: whitespace Next lexeme is:  
-Next token is: int Next lexeme is: 3
+Next token is: int Next lexeme is: 12
+Next token is: unknown Next lexeme is: unknown
 Next token is: whitespace Next lexeme is: 
-Next token is: print Next lexeme is: print
+
+    
+Next token is: id Next lexeme is: for
 Next token is: whitespace Next lexeme is:  
-Next token is: id Next lexeme is: z
-Next token is: unknown Next lexeme is: ;
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: month
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 00
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: month
+Next token is: + Next lexeme is: +
+Next token is: + Next lexeme is: +
+Next token is: ) Next lexeme is: )
 Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interest
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: monthlyInterestRate
+Next token is: whitespace Next lexeme is:  
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 100
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: principial
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: monthlyPayment
+Next token is: whitespace Next lexeme is:  
+Next token is: - Next lexeme is: -
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interest
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: payment
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interest
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: principial
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+        
+Next token is: id Next lexeme is: if
+Next token is: whitespace Next lexeme is:  
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: principial
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 1
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+        
+Next token is: id Next lexeme is: if
+Next token is: whitespace Next lexeme is:  
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: month
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: to
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: month
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: balance
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tN
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: A
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tN
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: A
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tN
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: A
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tN
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: A
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: id Next lexeme is: continue
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+        
+Next token is: id Next lexeme is: if
+Next token is: whitespace Next lexeme is:  
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: principial
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: id Next lexeme is: principial
+Next token is: whitespace Next lexeme is:  
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: balance
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+        
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: - Next lexeme is: -
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: principial
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+        
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Formatting
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: issue
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: solving
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: id Next lexeme is: if
+Next token is: whitespace Next lexeme is:  
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: balance
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 1000
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: to
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: month
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: balance
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: payment
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: monthlyInterestRate
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: interest
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: principial
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: else
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+            
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: to
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: month
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: balance
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: payment
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: monthlyInterestRate
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: interest
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: principial
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: ( Next lexeme is: (
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: months
+Next token is: ) Next lexeme is: )
+Next token is: + Next lexeme is: +
+Next token is: + Next lexeme is: +
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+        
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: totalInterest
+Next token is: whitespace Next lexeme is:  
+Next token is: + Next lexeme is: +
+Next token is: = Next lexeme is: =
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interest
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+    
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 0
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: void
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: int
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: months
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: totalInterest
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tAmortization
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Table
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Month
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tBalance
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: t
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tPayment
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tRate
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tInterest
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: tPrincipal
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: calculatedOutput
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: * Next lexeme is: *
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: It
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: takes
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: months
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: months
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: pay
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: off
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: the
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: loan
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: n
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: cout
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: Total
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: interest
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: paid
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: is
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: * Next lexeme is: *
+Next token is: id Next lexeme is: totalInterest
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Create
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: an
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: ostringstream
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: streamObj
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Set
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Fixed
+Next token is: whitespace Next lexeme is:  
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: Point
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Notation
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: fixed
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Set
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: precision
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 2
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: digits
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: setprecision
+Next token is: ( Next lexeme is: (
+Next token is: int Next lexeme is: 2
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: Add
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Get
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: from
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: streamObj
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: str
+Next token is: ( Next lexeme is: (
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: format
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: precision
+Next token is: unknown Next lexeme is: unknown
+Next token is: int Next lexeme is: 2
+Next token is: ( Next lexeme is: (
+Next token is: id Next lexeme is: float
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: ) Next lexeme is: )
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Create
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: an
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: ostringstream
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: streamObj
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Set
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Fixed
+Next token is: whitespace Next lexeme is:  
+Next token is: - Next lexeme is: -
+Next token is: id Next lexeme is: Point
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Notation
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: fixed
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Set
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: precision
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: int Next lexeme is: 2
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: digits
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: std
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: setprecision
+Next token is: ( Next lexeme is: (
+Next token is: int Next lexeme is: 2
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: id Next lexeme is: Add
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: double
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: to
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: streamObj
+Next token is: whitespace Next lexeme is:  
+Next token is: unknown Next lexeme is: unknown
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: number
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: / Next lexeme is: /
+Next token is: / Next lexeme is: /
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: Get
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: from
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: output
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: string
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: stream
+Next token is: whitespace Next lexeme is: 
+    
+Next token is: id Next lexeme is: return
+Next token is: whitespace Next lexeme is:  
+Next token is: id Next lexeme is: streamObj
+Next token is: unknown Next lexeme is: unknown
+Next token is: id Next lexeme is: str
+Next token is: ( Next lexeme is: (
+Next token is: ) Next lexeme is: )
+Next token is: unknown Next lexeme is: unknown
+Next token is: whitespace Next lexeme is: 
+Next token is: unknown Next lexeme is: unknown
 Next token is: eof Next lexeme is: eof
