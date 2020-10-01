@@ -67,8 +67,12 @@ int main() {
         C_alive = true;
         while (at_least_two_alive(A_alive, B_alive, C_alive))
         {
-            Aaron_shoots1(B_alive, C_alive);
-            Bob_shoots(A_alive, C_alive);
+            if (A_alive) {
+                Aaron_shoots1(B_alive, C_alive);
+            }
+            if (B_alive) {
+                Bob_shoots(A_alive, C_alive);
+            }
             if (C_alive) {
                 Charlie_shoots(A_alive, B_alive);
             }
@@ -95,10 +99,14 @@ int main() {
         B_alive = true;
         C_alive = true;
         while (at_least_two_alive(A_alive, B_alive, C_alive)) {
-            Aaron_shoots2(B_alive,C_alive);
-            Bob_shoots(A_alive,C_alive);
+            if (A_alive) {
+                Aaron_shoots2(B_alive, C_alive);
+            }
+            if (B_alive) {
+                Bob_shoots(A_alive, C_alive);
+            }
             if (C_alive) {
-                Charlie_shoots(A_alive,B_alive);
+                Charlie_shoots(A_alive, B_alive);
             }
         }
         if (A_alive) A_wins2++;
