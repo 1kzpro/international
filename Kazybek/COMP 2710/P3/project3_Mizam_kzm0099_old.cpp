@@ -16,7 +16,7 @@ using namespace std;
 
 const int MAX_SIZE = 100;
 
-int read_file(int* inputArray, ifstream& instream);
+int read_file(int inputArray[], ifstream& instream);
 int sort(int * inputArray1, int &inputArray1_size, int * inputArray2, int &inputArray2_size, int * outputArray);
 void write_file(int * outputArray, int &outputArray_size, string output_filepath);
 void print_array(int * array, int &size);
@@ -69,13 +69,13 @@ int main() {
     return 0;
 }
 
-int read_file(int* inputArray, ifstream& inStream) {
+int read_file(int inputArray[], ifstream& inStream) {
     int index = 0;
-    inStream >> *(inputArray + index);
+    inStream >> inputArray[index];
     
     while(! inStream.eof()) {
         index++;
-        inStream >> *(inputArray + index);
+        inStream >> inputArray[index];
     }
     return index;
 }
