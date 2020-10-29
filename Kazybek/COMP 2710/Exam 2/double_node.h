@@ -133,6 +133,21 @@ public:
         printf("\n");
     }
 
+    void display(Node ** head)
+    {
+        printf("Values of list: ");
+
+        Node *currentNode = *head;
+
+        while (currentNode)
+        {
+            printf("%d ", currentNode->value);
+            currentNode = currentNode->next;
+        }
+
+        printf("\n");
+    }
+
     void recursive_display(Node *currentNode)
     {
 
@@ -159,13 +174,13 @@ public:
         // has been fully reversed
         if (!node->prev)
             head = node;
-        return;
+            return;
 
         // Otherwise, keep going
         return reverse(node->prev);
     }
 
-    void reverse(Node **head)
+    void reverse_iteration(Node **head)
     {
         Node *temp = NULL;
         Node *current = *head;
@@ -173,10 +188,14 @@ public:
         /* swap next and prev for all nodes of  doubly linked list */
         while (current != NULL)
         {
+            temp = current->prev;  
+            current->prev = current->next;  
+            current->next = temp;              
+            current = current->prev;
         }
         /* Before changing the head, check for the cases like empty  list and list with only one node */
-        if () {
-            
+        if (temp != NULL) {
+            *head = temp->prev;
         }
     }
 };
