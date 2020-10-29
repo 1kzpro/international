@@ -9,7 +9,11 @@ int main() {
     myListS->insertNode(0, 4);
     myListS->insertNode(0, 5);
 
-    cout << myListS->deleteNode(5) << endl;
+    myListS->display();
+
+    myListS->head = myListS->reverse(NULL, myListS->head);
+
+    // cout << myListS->getNode(0)->next->value << endl;
 
     myListS->display();
 

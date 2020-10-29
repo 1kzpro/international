@@ -11,27 +11,29 @@ int main() {
     myListD->insertNode(0, 5);
 
 
-    printf("%d \n", myListD->findNode(7));
+    // printf("%d \n", myListD->findNode(7));
 
-    Node *the_node = myListD->getNode(myListD->findNode(3));
+    // Node *the_node = myListD->getNode(myListD->findNode(3));
 
-    printf("Prev Value: %d \n", the_node->prev->value);
-    printf("Current Value: %d \n", the_node->value);
-    printf("Next Value: %d \n", the_node->next->value);
+    // printf("Prev Value: %d \n", the_node->prev->value);
+    // printf("Current Value: %d \n", the_node->value);
+    // printf("Next Value: %d \n", the_node->next->value);
 
-    myListD->deleteNode(1);
+    // myListD->deleteNode(1);
 
-    the_node = myListD->getNode(myListD->findNode(2));
+    // the_node = myListD->getNode(myListD->findNode(2));
 
-    if (the_node->prev)
-        printf("Prev Value: %d \n", the_node->prev->value);
+    // if (the_node->prev)
+    //     printf("Prev Value: %d \n", the_node->prev->value);
 
-    printf("Current Value: %d \n", the_node->value);
+    // printf("Current Value: %d \n", the_node->value);
 
-    if (the_node->next)
-    printf("Next Value: %d \n", the_node->next->value);
+    // if (the_node->next)
+    // printf("Next Value: %d \n", the_node->next->value);
 
     myListD->display();
+    myListD->reverse(myListD->head);
+    myListD->recursive_display(myListD->head);
 
     return 0;
 }

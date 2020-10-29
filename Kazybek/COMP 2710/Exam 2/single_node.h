@@ -50,7 +50,7 @@ class SinglyLinkedList {
     }
 
     int deleteNode(int value) {
-        Node * previousNode = nullptr;
+        Node * previousNode = NULL;
         Node * currentNode = head;
         int currentIndex = 1;
         while (currentNode && currentNode->value != value)
@@ -74,6 +74,23 @@ class SinglyLinkedList {
         return 0;
     }
 
+    Node *getNode(int index)
+    {
+        if (index < 0)
+            return nullptr;
+
+        int currentIndex = 1;
+        Node *currentNode = head;
+
+        while (currentNode && index > currentIndex)
+        {
+            currentNode = currentNode->next;
+            currentIndex++;
+        }
+
+        return currentNode;
+    }
+
     void display() {
         printf("Values of list: ");
 
@@ -88,5 +105,28 @@ class SinglyLinkedList {
         }
 
         printf("\n");
+    }
+
+    void recursive_display(Node * currentNode) {
+
+        if (!currentNode) {
+            return;
+        }
+        printf("%d ", currentNode->value);
+        recursive_display(currentNode->next);
+    }
+
+    Node * reverse(Node *prevNode, Node *node) {
+        if (!node)
+            return prevNode;
+
+        // swap
+        Node *temp = node->next;
+        node->next = prevNode;
+        prevNode = node;
+        node = temp;
+
+        // Otherwise, keep going
+        return reverse(prevNode, node);
     }
 };

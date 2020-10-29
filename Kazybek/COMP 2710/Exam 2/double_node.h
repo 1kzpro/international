@@ -1,52 +1,62 @@
 #include <iostream>
 
-struct Node {
+struct Node
+{
     int value;
-    Node * prev;
-    Node * next;
+    Node *prev;
+    Node *next;
 };
 
-class DoublyLinkedList {
-    public:
-    Node * head;
+class DoublyLinkedList
+{
+public:
+    Node *head;
 
-    int findNode(int value) {
+    int findNode(int value)
+    {
         int currentIndex = 1;
-        Node * currentNode = head;
+        Node *currentNode = head;
         while (currentNode && currentNode->value != value)
         {
             currentNode = currentNode->next;
             currentIndex++;
         }
-        
-        if(currentNode) {
+
+        if (currentNode)
+        {
             return currentIndex;
         }
         return -1;
     }
 
-    Node * insertNode(int index, int value) {
-        if (index < 0) return nullptr;
+    Node *insertNode(int index, int value)
+    {
+        if (index < 0)
+            return nullptr;
 
         int currentIndex = 1;
-        Node * currentNode = head;
+        Node *currentNode = head;
         while (currentNode && index > currentIndex)
         {
             currentNode = currentNode->next;
             currentIndex++;
         }
-        if (index > 0 && currentNode == nullptr) return nullptr;
+        if (index > 0 && currentNode == nullptr)
+            return nullptr;
 
-        Node * newNode = new Node;
+        Node *newNode = new Node;
         newNode->value = value;
-        if (index == 0) {
+        if (index == 0)
+        {
             newNode->next = head;
-            if (head) {
+            if (head)
+            {
                 head->prev = newNode;
             }
             head = newNode;
         }
-        else {
+        else
+        {
             newNode->prev = currentNode->prev;
             newNode->next = currentNode;
             currentNode->prev->next = newNode;
@@ -55,25 +65,31 @@ class DoublyLinkedList {
         return newNode;
     }
 
-    int deleteNode(int value) {
-        Node * currentNode = head;
+    int deleteNode(int value)
+    {
+        Node *currentNode = head;
         int currentIndex = 1;
         while (currentNode && currentNode->value != value)
         {
             currentNode = currentNode->next;
             currentIndex++;
         }
-        
-        if(currentNode) {
-            if(currentNode->prev) {
+
+        if (currentNode)
+        {
+            if (currentNode->prev)
+            {
                 currentNode->prev->next = currentNode->next;
-                if (currentNode->next) {
+                if (currentNode->next)
+                {
                     currentNode->next->prev = currentNode->prev;
                 }
             }
-            else {
+            else
+            {
                 head = currentNode->next;
-                if (currentNode->next) {
+                if (currentNode->next)
+                {
                     currentNode->next->prev = currentNode->prev;
                 }
             }
@@ -85,25 +101,28 @@ class DoublyLinkedList {
         return 0;
     }
 
-    Node * getNode(int index) {
-        if (index < 0) return nullptr;
+    Node *getNode(int index)
+    {
+        if (index < 0)
+            return nullptr;
 
         int currentIndex = 1;
-        Node * currentNode = head;
+        Node *currentNode = head;
 
         while (currentNode && index > currentIndex)
         {
             currentNode = currentNode->next;
             currentIndex++;
         }
-        
+
         return currentNode;
     }
 
-    void display() {
+    void display()
+    {
         printf("Values of list: ");
 
-        Node * currentNode = head;
+        Node *currentNode = head;
 
         while (currentNode)
         {
@@ -112,5 +131,52 @@ class DoublyLinkedList {
         }
 
         printf("\n");
+    }
+
+    void recursive_display(Node *currentNode)
+    {
+
+        if (!currentNode)
+        {
+            return;
+        }
+        printf("%d ", currentNode->value);
+        recursive_display(currentNode->next);
+    }
+
+    void reverse(Node *node)
+    {
+        // If empty list, return
+        if (!node)
+            return;
+
+        // swap
+        Node *temp = node->next;
+        node->next = node->prev;
+        node->prev = temp;
+
+        // If the prev is now NULL, the list
+        // has been fully reversed
+        if (!node->prev)
+            head = node;
+        return;
+
+        // Otherwise, keep going
+        return reverse(node->prev);
+    }
+
+    void reverse(Node **head)
+    {
+        Node *temp = NULL;
+        Node *current = *head;
+
+        /* swap next and prev for all nodes of  doubly linked list */
+        while (current != NULL)
+        {
+        }
+        /* Before changing the head, check for the cases like empty  list and list with only one node */
+        if () {
+            
+        }
     }
 };
