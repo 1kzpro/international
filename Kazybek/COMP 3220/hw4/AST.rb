@@ -29,6 +29,34 @@ class AST
          self.setFirstChild(node) 
       end
    end  
+
+   def addAsFirstChild(node)
+      if (node == nil) then return nil end
+      t = self.getFirstChild
+      if (t != nil)
+         n = self.setFirstChild(node)
+         n.setNextSibling(t)
+      else
+         self.setFirstChild(node)
+      end
+   end
+
+   def reverse
+      h = self.getFirstChild
+      print("Root: ",h.to_s, "\n")
+      if (h != nil)
+         while (h.getNextSibling() != nil)
+            t = h.getNextSibling().getNextSibling()
+            print("Temp: ",t.to_s, "\n")
+            h.getNextSibling().setNextSibling(h)
+            print("Next Right: ",h.getNextSibling().getNextSibling().to_s, "\n")
+            h.setNextSibling(t)
+            print("Current Right: ",h.getNextSibling().to_s, "\n")
+         end
+         print("List",h.toStringList, "\n")
+         self.setFirstChild(h)
+      end
+   end
    
    def getFirstChild
       return @down
@@ -51,6 +79,21 @@ class AST
    end
    
    def toStringList
+      t = self
+      ts = ""
+      if (t.getFirstChild() != nil)then ts += " (" end
+      ts += " #{self.to_s()}"
+      if (t.getFirstChild() != nil)
+         ts += t.getFirstChild().toStringList()
+      end
+      if (t.getFirstChild() != nil)then  ts += " )" end
+      if (t.getNextSibling() != nil)
+         ts += t.getNextSibling().toStringList()
+      end
+      return ts
+   end
+
+   def myToStringList
       t = self
       ts = ""
       if (t.getFirstChild() != nil)then ts += " (" end
