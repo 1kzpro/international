@@ -77,7 +77,7 @@ class Parser < Scanner
         if expr
             etl = etail()
             if etl
-                etl.addChild(expr)
+                etl.addAsFirstChild(expr)
                 return etl
             else
                 return expr
@@ -96,7 +96,7 @@ class Parser < Scanner
         if trm
             ttl = ttail()
             if ttl
-                ttl.addChild(trm)
+                ttl.addAsFirstChild(trm)
                 return ttl
             else
                 return trm
