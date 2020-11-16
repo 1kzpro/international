@@ -57,6 +57,20 @@ class AST
          self.setFirstChild(h)
       end
    end
+
+   def reverse_recursive
+      t = self
+      r = AST.new("test", test)
+      while(t != nil)
+         t = t.getFirstChild
+         if (t.getFirstChild != nil)
+            r
+         else
+            t = t.getNextSibling
+         end
+      end
+      return r
+   end
    
    def getFirstChild
       return @down
@@ -78,6 +92,10 @@ class AST
      return @token.to_s    
    end
    
+   def my_to_s
+      return @token.my_to_s    
+   end
+
    def toStringList
       t = self
       ts = ""
@@ -97,13 +115,13 @@ class AST
       t = self
       ts = ""
       if (t.getFirstChild() != nil)then ts += " (" end
-      ts += " #{self.to_s()}"
+      ts += " #{self.my_to_s()}"
       if (t.getFirstChild() != nil)
-         ts += t.getFirstChild().toStringList()
+         ts += t.getFirstChild().myToStringList()
       end
       if (t.getFirstChild() != nil)then  ts += " )" end
       if (t.getNextSibling() != nil)
-         ts += t.getNextSibling().toStringList()
+         ts += t.getNextSibling().myToStringList()
       end
       return ts
    end

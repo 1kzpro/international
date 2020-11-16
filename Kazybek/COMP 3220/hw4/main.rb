@@ -3,6 +3,6 @@ load "Lexer.rb"
 load "Token.rb"
 load "AST.rb"
 
-parse = Parser.new("test/input1.tiny")
+parse = Parser.new("test/test.tiny")
 mytree = parse.program()
 puts mytree.myToStringList()

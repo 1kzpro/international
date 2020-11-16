@@ -37,4 +37,7 @@ class Token
 	 #to string method that returns the token type and the lexeme stored inside this token
        return "#{@type} #{@text}"
    end
+   def my_to_s
+      return "#{@text}"
+   end
 end
