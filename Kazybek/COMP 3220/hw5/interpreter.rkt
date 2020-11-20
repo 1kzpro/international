@@ -57,7 +57,8 @@
                                     (display (exp myEnv (cadr stmt)))
                                     myEnv))
         ((eqv? (car stmt) '=) (extend-env myEnv (cadr stmt)(exp myEnv (caddr stmt))))
-        ( else (display "\nI saw something I didn't understand.")))))
+        ((eq? (car stmt) 'while) (extend-env myEnv (cadr stmt)(process (cdr stmt) myEnv)))
+        ( else (display "\nI saw something I didn't understand. intp")))))
                     
 ;; exp : expression -> value    
 (define exp
@@ -73,7 +74,7 @@
       ((eqv? (car e) '<) (< (exp myEnv (cadr e))(exp myEnv (caddr e))))
       ((eqv? (car e) '>) (> (exp myEnv (cadr e))(exp myEnv (caddr e))))
       ((eq? (car e) 'and) (and (exp myEnv (cadr e))(exp myEnv (caddr e))))
-      (else (display "I saw something I didn't understand.")))))
+      (else (display "I saw something I didn't understand. exp")))))
 
 ;;; DON'T TOUCH THE LINE BELOW THIS ONE IF YOU WANT TO RECEIVE A GRADE! ;;;
 (provide interpreter)
