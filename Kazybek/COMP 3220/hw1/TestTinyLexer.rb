@@ -14,7 +14,7 @@ tok = scan.nextToken()
 
 # the code below will open a file so that I 
 # can save tokens to it
-tokenFile = File.open("tokens2", "w")
+tokenFile = File.open("tokens", "w")
 
 # keep "fetching" one token at a time, using your scanner
 # until there are no tokens left to scan 
