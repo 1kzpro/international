@@ -1,0 +1,3 @@
+print("Hello world")
+friends = ["Kaza","doge"]
+print (friends[0])

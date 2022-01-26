@@ -1,0 +1,3 @@
+﻿  Assembling Yuhao_Zhu.asm...
+Yuhao_Zhu.asm(6): fatal error A1000: cannot open file : Irvine32.inc
+D:\VS2019\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: 命令“ml64.exe /c /nologo /Zi /Fo"x64\Debug\Yuhao_Zhu.obj" /W3 /errorReport:prompt  /TaYuhao_Zhu.asm”已退出，返回代码为 1。

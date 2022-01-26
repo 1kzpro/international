@@ -1,0 +1,4 @@
+﻿  Assembling Yuhao_Zhu.asm...
+Yuhao_Zhu.asm(44): error A2006: undefined symbol : b1
+Yuhao_Zhu.asm(46): error A2006: undefined symbol : b1
+D:\VS2019\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: 命令“ml.exe /c /nologo /Zi /Fo"Debug\Yuhao_Zhu.obj" /W3 /errorReport:prompt  /TaYuhao_Zhu.asm”已退出，返回代码为 1。
