@@ -15,13 +15,13 @@
             $error_msg = '';
             $result = runQuery($sql_query_text);
             if ($result === TRUE) {
-                if (str_contains(strtolower($sql_query_text), 'insert into')) {
+                if (str_contains_(strtolower($sql_query_text), 'insert into')) {
                     $sql_query_result_html = '<p>New record created successfully.</p>';
                 }
-                else if (str_contains(strtolower($sql_query_text), 'update')) {
+                else if (str_contains_(strtolower($sql_query_text), 'update')) {
                     $sql_query_result_html = '<p>Record updated successfully.</p>';
                 }
-                else if (str_contains(strtolower($sql_query_text), 'delete')) {
+                else if (str_contains_(strtolower($sql_query_text), 'delete')) {
                     $sql_query_result_html = '<p>Record deleted successfully.</p>';
                 }
                 else {

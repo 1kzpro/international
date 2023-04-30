@@ -13,8 +13,9 @@ function renderTable($result) {
     $sql_table_html .= '<tr></thead>';
 
     $sql_table_html .= '<tbody>';
-    $rows = $result->fetch_all(MYSQLI_ASSOC);
-    foreach ($rows as $row) {
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    while ($row) {
         $sql_table_html .= '<tr>';
         for ($i = 0; $i < count($fieldinfo); $i++) {
             $field = $fieldinfo[$i]->name;
@@ -29,6 +30,7 @@ function renderTable($result) {
             $sql_table_html .= '<td>' . $row[$field] . '</td>';
         }
         $sql_table_html .= '</tr>';
+        $row = $result->fetch_array();
     }
 
     $sql_table_html .= '</tbody>';
