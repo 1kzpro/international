@@ -65,8 +65,6 @@
 
         if (array_key_exists('clearButton', $_POST)) {
             $sql_query_text = '';
-            $sql_query_result_html = '';
-            $error_msg = '';
             console_log("Clear Button Pressed!");
         }
     }
