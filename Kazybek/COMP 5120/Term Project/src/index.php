@@ -1,10 +1,46 @@
 <?php
     require_once('db.php');
     require_once('table_generator.php');
+    require_once('sanitizer.php');
 
     $sql_query_text = '';
-    $sql_table_html = '';
+    $sql_query_result_html = '';
     $error_msg = '';
+
+
+    function requestSQLquery($sql_query_text) {
+        try {
+            global $sql_query_result_html, $error_msg;
+            $sql_query_result_html = '';
+            $error_msg = '';
+            $result = runQuery($sql_query_text);
+            if ($result === TRUE) {
+                if (str_contains(strtolower($sql_query_text), 'insert into')) {
+                    $sql_query_result_html = '<p>New record created successfully.</p>';
+                }
+                else if (str_contains(strtolower($sql_query_text), 'update')) {
+                    $sql_query_result_html = '<p>Record updated successfully.</p>';
+                }
+                else if (str_contains(strtolower($sql_query_text), 'delete')) {
+                    $sql_query_result_html = '<p>Record deleted successfully.</p>';
+                }
+                else {
+                    $sql_query_result_html = '<p>Operation completed successfully.</p>';
+                }
+            }
+            else if ($result != NULL) {
+                $sql_query_result_html = renderTable($result);
+            }
+            else {
+                $sql_query_result_html = '<p>Check the error message.</p>';
+                $error_msg = getDBError();
+            }
+        }
+        catch (Throwable $e) {
+            $sql_query_result_html = '<p>Check the error message.</p>';
+            $error_msg = $e->getMessage();
+        }
+    }
 
     if ($_POST) // If sql query was submitted...
     {   
@@ -15,22 +51,15 @@
             console_log($sql_query_text);
 
             if ($sql_query_text != '') {
-                try {
-                    $sql_table_html = '';
-                    $error_msg = '';
-                    $result = runQuery($sql_query_text);
-                    if ($result != NULL) {
-                        $sql_table_html = renderTable($result);
-                    }
-                    else {
-                        $sql_table_html = '<p>Check the error message.</p>';
-                        $error_msg = getDBError();
-                    }
+                // Check the input of the sql query
+                $sanitize_array = isClean($sql_query_text);
+                if (!$sanitize_array[0]) {
+                    $error_msg = $sanitize_array[1];
                 }
-                catch (Throwable $e) {
-                    $sql_table_html = '<p>Check the error message.</p>';
-                    $error_msg = $e->getMessage();
+                else {
+                    requestSQLquery($sql_query_text);
                 }
+                
             }
         }
 
@@ -90,7 +119,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <?=$sql_table_html?>
+                        <?=$sql_query_result_html?>
                     </div>
                 </div>
             </div>

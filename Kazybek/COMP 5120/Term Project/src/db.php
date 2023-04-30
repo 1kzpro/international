@@ -16,6 +16,19 @@ function createConnection() {
   $password = "12345";
   $db_name = "db_term_project";
 
+  // Load the database connection data from the json file
+  $myfile = fopen("db_key.json", "r") or die("Unable to open file!");
+  $jsonString = fread($myfile, filesize("db_key.json"));
+  fclose($myfile);
+
+  // decode the json string
+  $dbKey = json_decode($jsonString, true);
+  
+  $servername = $dbKey["servername"];
+  $username = $dbKey["username"];
+  $password = $dbKey["password"];
+  $db_name = $dbKey["db_name"];
+
   // Create connection
   $conn = new mysqli($servername, $username, $password, $db_name);
 
