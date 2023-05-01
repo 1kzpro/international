@@ -1,5 +1,7 @@
 <?php
 
+$error = '';
+
 function console_log($output, $with_script_tags = true) {
   $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . ');';
 
@@ -11,23 +13,10 @@ function console_log($output, $with_script_tags = true) {
 }
 
 function createConnection() {
-  $servername = "localhost";
-  $username = "root";
-  $password = "12345";
-  $db_name = "db_term_project";
-
-  // Load the database connection data from the json file
-  $myfile = fopen("db_key.json", "r") or die("Unable to open file!");
-  $jsonString = fread($myfile, filesize("db_key.json"));
-  fclose($myfile);
-
-  // decode the json string
-  $dbKey = json_decode($jsonString, true);
-  
-  $servername = $dbKey["servername"];
-  $username = $dbKey["username"];
-  $password = $dbKey["password"];
-  $db_name = $dbKey["db_name"];
+  $servername = "sysmysql8.auburn.edu";
+  $username = "kzm0099";
+  $password = "mkbekpro23";
+  $db_name = "kzm0099db";
 
   // Create connection
   $conn = new mysqli($servername, $username, $password, $db_name);
@@ -42,12 +31,14 @@ function createConnection() {
 }
 
 function runQuery($query) {
+  global $error;
   $conn = createConnection();
   try {
     $result = $conn->query($query);
     if ($result) {
       return $result;
     }
+    $error = $conn->error;
     return NULL;
   } catch (Throwable $e) {
     $conn->close();
@@ -56,9 +47,7 @@ function runQuery($query) {
 }
 
 function getDBError() {
-  $conn = createConnection();
-  $error = $conn->error;
-  $conn->close();
+  global $error;
   return $error;
 }
 ?>
