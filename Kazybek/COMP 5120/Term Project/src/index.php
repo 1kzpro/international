@@ -11,6 +11,7 @@
     function requestSQLquery($sql_query_text) {
         try {
             global $sql_query_result_html, $error_msg;
+            $sql_query_text = str_replace("\\", "", $sql_query_text);
             $sql_query_result_html = '';
             $error_msg = '';
             $result = runQuery($sql_query_text);
