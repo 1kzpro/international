@@ -107,7 +107,7 @@
                 <form class="row mb-3" method="post">
                     <textarea class="form-control" name="sqlQueryTextarea" rows="10"><?= $sql_query_text ?></textarea>
                     <div class="col mt-2">
-                        <button type="submit" class="btn btn-primary" name="runButton">Run</button>
+                        <button type="submit" class="btn btn-primary" name="runButton">Submit</button>
                         <button type="submit" class="btn btn-secondary" name="clearButton">Clear</button>
                     </div>
                 </form>
