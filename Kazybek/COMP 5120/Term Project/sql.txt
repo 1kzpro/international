@@ -20,6 +20,12 @@ LIMIT 1;
 
 
 -- [3] Show the unique names of all books ordered by *lastname1 firstname1*.
+SELECT DISTINCT Title
+FROM (((books as B
+INNER JOIN order_details as S ON B.BookID = S.BookID)
+INNER JOIN orders as O ON  S.OrderID = O.OrderID)
+INNER JOIN customers as C ON O.CustomerID = C.CustomerID)
+ORDER BY LastName, FirstName ASC;
 
 -- [4] Show the title of books which have more than 10 units in stock.
 SELECT B.Title
